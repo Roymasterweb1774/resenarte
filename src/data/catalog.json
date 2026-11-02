@@ -1,0 +1,147 @@
+{
+  "_info": "Catálogo inicial de perfumes reales. Notas según pirámides publicadas ampliamente; verificar con fuentes oficiales de cada marca antes de publicar. Fotos de Wikimedia Commons con licencia libre (ver image_credit). Se convierte a SQL con: npm run seed:sql",
+  "families": [
+    ["floral", "Floral", "Composiciones construidas alrededor de flores: rosa, jazmín, iris, tuberosa."],
+    ["amaderada", "Amaderada", "Maderas secas, cremosas o ahumadas: cedro, sándalo, vetiver."],
+    ["oriental-ambar", "Oriental / Ámbar", "Resinas, especias y ámbar: perfumes cálidos y envolventes."],
+    ["citrica", "Cítrica", "Bergamota, limón, mandarina: luminosas y chispeantes."],
+    ["gourmand", "Gourmand", "Notas que evocan lo comestible: vainilla, café, caramelo, praliné."],
+    ["fresca", "Fresca", "Acordes acuáticos, verdes y transparentes."],
+    ["aromatica", "Aromática", "Hierbas y plantas aromáticas: lavanda, romero, salvia."]
+  ],
+  "accords": [
+    ["Vainilla", "#C9A97E"], ["Amaderado", "#7A5C45"], ["Floral blanco", "#E3D6C8"], ["Floral", "#D2A9A0"],
+    ["Dulce", "#C88F7A"], ["Almizclado", "#B8AFA4"], ["Especiado", "#A0563B"], ["Cítrico", "#D9B84F"],
+    ["Aromático", "#8A9B7A"], ["Fresco", "#9FBFBA"], ["Atalcado", "#D8CCD6"], ["Ambarado", "#B67A3C"],
+    ["Verde", "#6F8B5E"], ["Terroso", "#6B5444"], ["Acuático", "#7FA6B5"], ["Aldehídico", "#D9D4C3"],
+    ["Cuero", "#5B4033"], ["Afrutado", "#C7745E"], ["Café", "#5E4033"]
+  ],
+  "brands": [
+    ["Chanel", "Francia"], ["Guerlain", "Francia"], ["Calvin Klein", "Estados Unidos"], ["Dior", "Francia"],
+    ["Giorgio Armani", "Italia"], ["Yves Saint Laurent", "Francia"], ["Paco Rabanne", "Francia"],
+    ["Jean Paul Gaultier", "Francia"], ["Le Labo", "Estados Unidos"], ["Hermès", "Francia"], ["Mugler", "Francia"],
+    ["Maison Francis Kurkdjian", "Francia"], ["Lancôme", "Francia"], ["Tom Ford", "Estados Unidos"],
+    ["Dolce & Gabbana", "Italia"]
+  ],
+  "perfumes": [
+    {
+      "name": "N°5", "brand": "Chanel", "family": "floral", "concentration": "Parfum", "gender": "femenino", "year": 1921,
+      "description": "Creado por Ernest Beaux.",
+      "image": "/fotos/chanel-n5.jpg", "image_credit": "Foto: Lily · CC BY 2.0 · Wikimedia Commons",
+      "notes": { "salida": ["Aldehídos", "Ylang-ylang", "Neroli", "Bergamota", "Limón"], "corazon": ["Rosa", "Jazmín", "Iris", "Lirio de los valles"], "fondo": ["Sándalo", "Vainilla", "Vetiver", "Ámbar", "Almizcle"] },
+      "accords": ["Aldehídico", "Floral", "Atalcado", "Floral blanco", "Almizclado"]
+    },
+    {
+      "name": "Shalimar", "brand": "Guerlain", "family": "oriental-ambar", "concentration": null, "gender": "femenino", "year": 1925,
+      "description": "Creado por Jacques Guerlain.",
+      "image": "/fotos/shalimar.jpg", "image_credit": "Foto: Gonna Fly Now · CC BY-SA 2.0 · Wikimedia Commons",
+      "notes": { "salida": ["Bergamota", "Limón"], "corazon": ["Iris", "Jazmín", "Rosa"], "fondo": ["Vainilla", "Opopónaco", "Haba tonka", "Incienso"] },
+      "accords": ["Ambarado", "Vainilla", "Atalcado", "Cítrico"]
+    },
+    {
+      "name": "CK One", "brand": "Calvin Klein", "family": "citrica", "concentration": "EDT", "gender": "unisex", "year": 1994,
+      "description": "Creado por Alberto Morillas y Harry Frémont.",
+      "image": "/fotos/ck-one.jpg", "image_credit": "Foto: Gonna Fly Now · CC BY-SA 2.0 · Wikimedia Commons",
+      "notes": { "salida": ["Bergamota", "Limón", "Mandarina", "Piña", "Cardamomo"], "corazon": ["Té verde", "Violeta", "Jazmín", "Rosa", "Nuez moscada"], "fondo": ["Almizcle", "Ámbar", "Sándalo", "Cedro", "Musgo de roble"] },
+      "accords": ["Cítrico", "Fresco", "Aromático", "Almizclado", "Verde"]
+    },
+    {
+      "name": "Eau Sauvage", "brand": "Dior", "family": "citrica", "concentration": "EDT", "gender": "masculino", "year": 1966,
+      "description": "Creado por Edmond Roudnitska.",
+      "image": "/fotos/eau-sauvage.jpg", "image_credit": "Foto: Olinone · CC BY-SA 4.0 · Wikimedia Commons",
+      "notes": { "salida": ["Limón", "Bergamota", "Albahaca", "Romero"], "corazon": ["Jazmín", "Lavanda"], "fondo": ["Vetiver", "Musgo de roble"] },
+      "accords": ["Cítrico", "Aromático", "Amaderado", "Fresco"]
+    },
+    {
+      "name": "Acqua di Giò Pour Homme", "brand": "Giorgio Armani", "family": "fresca", "concentration": "EDT", "gender": "masculino", "year": 1996,
+      "description": "Creado por Alberto Morillas.",
+      "image": "/fotos/acqua-di-gio.jpg", "image_credit": "Foto: Javier Velez · CC BY-SA 3.0 · Wikimedia Commons",
+      "notes": { "salida": ["Notas marinas", "Bergamota", "Limón", "Mandarina", "Neroli"], "corazon": ["Romero", "Jazmín", "Jacinto", "Nuez moscada"], "fondo": ["Pachulí", "Cedro", "Almizcle", "Ámbar"] },
+      "accords": ["Acuático", "Cítrico", "Aromático", "Fresco", "Amaderado"]
+    },
+    {
+      "name": "Black Opium", "brand": "Yves Saint Laurent", "family": "gourmand", "concentration": "EDP", "gender": "femenino", "year": 2014,
+      "description": "Creado por Nathalie Lorson, Marie Salamagne, Olivier Cresp y Honorine Blanc.",
+      "image": "/fotos/black-opium.jpg", "image_credit": "Foto: Dsuarez04 · CC BY-SA 4.0 · Wikimedia Commons",
+      "notes": { "salida": ["Pimienta rosa", "Azahar", "Pera"], "corazon": ["Café", "Jazmín", "Almendra amarga", "Regaliz"], "fondo": ["Vainilla", "Pachulí", "Cedro", "Madera de cachemira"] },
+      "accords": ["Café", "Vainilla", "Dulce", "Floral blanco"]
+    },
+    {
+      "name": "1 Million", "brand": "Paco Rabanne", "family": "oriental-ambar", "concentration": "EDT", "gender": "masculino", "year": 2008,
+      "description": "Creado por Christophe Raynaud, Olivier Pescheux y Michel Girard.",
+      "image": "/fotos/1-million.jpg", "image_credit": "Foto: Jacek Halicki · CC BY-SA 4.0 · Wikimedia Commons",
+      "notes": { "salida": ["Pomelo", "Menta", "Mandarina"], "corazon": ["Canela", "Rosa", "Especias"], "fondo": ["Cuero", "Ámbar", "Pachulí", "Maderas"] },
+      "accords": ["Dulce", "Especiado", "Cuero", "Amaderado", "Cítrico"]
+    },
+    {
+      "name": "Le Male", "brand": "Jean Paul Gaultier", "family": "aromatica", "concentration": "EDT", "gender": "masculino", "year": 1995,
+      "description": "Creado por Francis Kurkdjian.",
+      "image": "/fotos/le-male.jpg", "image_credit": "Foto: Bruce The Deus · CC BY-SA 3.0 · Wikimedia Commons",
+      "notes": { "salida": ["Lavanda", "Menta", "Cardamomo", "Bergamota", "Artemisa"], "corazon": ["Canela", "Azahar", "Comino"], "fondo": ["Vainilla", "Haba tonka", "Sándalo", "Ámbar", "Cedro"] },
+      "accords": ["Aromático", "Vainilla", "Dulce", "Atalcado", "Especiado"]
+    },
+    {
+      "name": "Coco Mademoiselle", "brand": "Chanel", "family": "floral", "concentration": "EDP", "gender": "femenino", "year": 2001,
+      "description": "Creado por Jacques Polge.",
+      "image": "/fotos/coco-mademoiselle.jpg", "image_credit": "Foto: Brownchl · CC BY 3.0 · Wikimedia Commons",
+      "notes": { "salida": ["Naranja", "Bergamota"], "corazon": ["Rosa", "Jazmín"], "fondo": ["Pachulí", "Vetiver", "Vainilla", "Almizcle"] },
+      "accords": ["Floral", "Cítrico", "Terroso", "Almizclado", "Amaderado"]
+    },
+    {
+      "name": "Santal 33", "brand": "Le Labo", "family": "amaderada", "concentration": "EDP", "gender": "unisex", "year": 2011,
+      "description": "Creado por Frank Voelkl.",
+      "image": "/fotos/santal-33.jpg", "image_credit": "Foto: The Honest Channel · CC BY 3.0 · Wikimedia Commons",
+      "notes": { "salida": ["Violeta", "Cardamomo"], "corazon": ["Iris", "Ámbar gris"], "fondo": ["Sándalo", "Papiro", "Cedro", "Cuero"] },
+      "accords": ["Amaderado", "Cuero", "Atalcado", "Especiado"]
+    },
+    {
+      "name": "Terre d'Hermès", "brand": "Hermès", "family": "amaderada", "concentration": "EDT", "gender": "masculino", "year": 2006,
+      "description": "Creado por Jean-Claude Ellena.",
+      "image": "/fotos/terre-d-hermes.jpg", "image_credit": "Foto: IDiamond · CC BY-SA 3.0 · Wikimedia Commons",
+      "notes": { "salida": ["Naranja", "Pomelo"], "corazon": ["Pimienta", "Geranio", "Pedernal"], "fondo": ["Vetiver", "Cedro", "Pachulí", "Benjuí"] },
+      "accords": ["Amaderado", "Cítrico", "Terroso", "Especiado"]
+    },
+    {
+      "name": "Sauvage", "brand": "Dior", "family": "aromatica", "concentration": "EDT", "gender": "masculino", "year": 2015,
+      "description": "Creado por François Demachy.",
+      "image": null, "image_credit": null,
+      "notes": { "salida": ["Bergamota", "Pimienta"], "corazon": ["Pimienta de Sichuan", "Lavanda", "Pimienta rosa", "Geranio", "Elemí"], "fondo": ["Ambroxan", "Cedro", "Ládano"] },
+      "accords": ["Aromático", "Especiado", "Cítrico", "Fresco", "Amaderado"]
+    },
+    {
+      "name": "Angel", "brand": "Mugler", "family": "gourmand", "concentration": "EDP", "gender": "femenino", "year": 1992,
+      "description": "Creado por Olivier Cresp.",
+      "image": null, "image_credit": null,
+      "notes": { "salida": ["Bergamota", "Melón", "Coco"], "corazon": ["Miel", "Frutos rojos", "Ciruela"], "fondo": ["Pachulí", "Caramelo", "Vainilla", "Chocolate", "Haba tonka"] },
+      "accords": ["Dulce", "Terroso", "Vainilla", "Afrutado"]
+    },
+    {
+      "name": "Baccarat Rouge 540", "brand": "Maison Francis Kurkdjian", "family": "oriental-ambar", "concentration": "EDP", "gender": "unisex", "year": 2015,
+      "description": "Creado por Francis Kurkdjian.",
+      "image": null, "image_credit": null,
+      "notes": { "salida": ["Azafrán", "Jazmín"], "corazon": ["Ámbar gris", "Madera de ámbar"], "fondo": ["Resina de abeto", "Cedro"] },
+      "accords": ["Ambarado", "Amaderado", "Dulce", "Especiado"]
+    },
+    {
+      "name": "La Vie est Belle", "brand": "Lancôme", "family": "gourmand", "concentration": "EDP", "gender": "femenino", "year": 2012,
+      "description": "Creado por Olivier Polge, Dominique Ropion y Anne Flipo.",
+      "image": null, "image_credit": null,
+      "notes": { "salida": ["Grosella negra", "Pera"], "corazon": ["Iris", "Jazmín", "Azahar"], "fondo": ["Praliné", "Vainilla", "Pachulí", "Haba tonka"] },
+      "accords": ["Dulce", "Vainilla", "Afrutado", "Atalcado"]
+    },
+    {
+      "name": "Black Orchid", "brand": "Tom Ford", "family": "oriental-ambar", "concentration": "EDP", "gender": "unisex", "year": 2006,
+      "description": null,
+      "image": null, "image_credit": null,
+      "notes": { "salida": ["Trufa", "Gardenia", "Grosella negra", "Ylang-ylang", "Bergamota"], "corazon": ["Orquídea", "Especias", "Loto"], "fondo": ["Chocolate", "Pachulí", "Vainilla", "Incienso", "Sándalo", "Vetiver"] },
+      "accords": ["Terroso", "Especiado", "Dulce", "Floral", "Amaderado"]
+    },
+    {
+      "name": "Light Blue", "brand": "Dolce & Gabbana", "family": "citrica", "concentration": "EDT", "gender": "femenino", "year": 2001,
+      "description": "Creado por Olivier Cresp.",
+      "image": null, "image_credit": null,
+      "notes": { "salida": ["Limón", "Manzana", "Cedro", "Campanilla"], "corazon": ["Bambú", "Jazmín", "Rosa"], "fondo": ["Cedro", "Ámbar", "Almizcle"] },
+      "accords": ["Cítrico", "Fresco", "Afrutado", "Amaderado"]
+    }
+  ]
+}
